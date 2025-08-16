@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <style>
+        #cards-container {
+          display: grid;
+          grid-template-columns: repeat(3, 6.25rem);
+          gap: .5rem;
+          margin-top: 1.25rem;
+        }
+        .card {
+          width: 6.25rem;
+          height: 8.75rem;
+          background-color: lightgray;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          border: .1rem solid #333;
+        }
+      </style>
+      
+</head>
+<body>
+    <main id = "wrapper">
+    <!-- ==== SCORE BOARD SECTION ==== -->
+        <section id = "scoreboard">
+            <p>Attempts Left: <span id = "attempts">3</span></p>
+          </section>
+    <!-- ==== GAME BOARD SECTION ==== -->
+        <section id = "game-board">
+    <!-- ==== CARDS SECTION ==== -->
+            <div id = "cards-container">
+                <div class = "card" data-value="1">
+                  <div class = "front">Card 1 Front</div>
+                  <div class = "back">Card 1 Back</div>
+                </div>
+                <div class = "card" data-value="1">
+                  <div class = "front">Card 2 Front</div>
+                  <div class = "back">Card 2 Back</div>
+                </div>
+                <div class = "card" data-value="2">
+                  <div class = "front">Card 3 Front</div>
+                  <div class = "back">Card 3 Back</div>
+                </div>
+                <div class = "card" data-value="2">
+                  <div class = "front">Card 4 Front</div>
+                  <div class = "back">Card 4 Back</div>
+                </div>
+                <div class = "card" data-value="3">
+                  <div class = "front">Card 5 Front</div>
+                  <div class = "back">Card 5 Back</div>
+                </div>
+                <div class = "card" data-value="3">
+                  <div class = "front">Card 6 Front</div>
+                  <div class = "back">Card 6 Back</div>
+                </div>
+              </div>
+        </section>      
+    <!-- ==== BUTTON ==== -->   
+        <button>Restart</button>
+    </main>    
+</body>
+</html>
