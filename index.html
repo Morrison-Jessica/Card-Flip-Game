@@ -3,26 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Game</title>
-    <style>
-        #cards-container {
-          display: grid;
-          grid-template-columns: repeat(3, 6.25rem);
-          gap: .5rem;
-          margin-top: 1.25rem;
-        }
-        .card {
-          width: 6.25rem;
-          height: 8.75rem;
-          background-color: lightgray;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1rem;
-          border: .1rem solid #333;
-        }
-      </style>
-      
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Card Game</title>   
 </head>
 <body>
     <main id = "wrapper">
@@ -62,6 +44,8 @@
         </section>      
     <!-- ==== BUTTON ==== -->   
         <button>Restart</button>
-    </main>    
+    </main> 
+    <!-- ==== SCRIPTS ==== --> 
+    <script src="./dist/ts/index.js"></script>  
 </body>
 </html>
