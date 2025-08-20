@@ -1,51 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Card Game</title>   
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Memory Match Game</title>
+  <link rel="stylesheet" href="dist/css/index.css" >
 </head>
 <body>
-    <main id = "wrapper">
-    <!-- ==== SCORE BOARD SECTION ==== -->
-        <section id = "scoreboard">
-            <p>Attempts Left: <span id = "attempts">3</span></p>
-          </section>
-    <!-- ==== GAME BOARD SECTION ==== -->
-        <section id = "game-board">
-    <!-- ==== CARDS SECTION ==== -->
-            <div id = "cards-container">
-                <div class = "card" data-value="1">
-                  <div class = "front">Card 1 Front</div>
-                  <div class = "back">Card 1 Back</div>
-                </div>
-                <div class = "card" data-value="1">
-                  <div class = "front">Card 2 Front</div>
-                  <div class = "back">Card 2 Back</div>
-                </div>
-                <div class = "card" data-value="2">
-                  <div class = "front">Card 3 Front</div>
-                  <div class = "back">Card 3 Back</div>
-                </div>
-                <div class = "card" data-value="2">
-                  <div class = "front">Card 4 Front</div>
-                  <div class = "back">Card 4 Back</div>
-                </div>
-                <div class = "card" data-value="3">
-                  <div class = "front">Card 5 Front</div>
-                  <div class = "back">Card 5 Back</div>
-                </div>
-                <div class = "card" data-value="3">
-                  <div class = "front">Card 6 Front</div>
-                  <div class = "back">Card 6 Back</div>
-                </div>
-              </div>
-        </section>      
-    <!-- ==== BUTTON ==== -->   
-        <button>Restart</button>
-    </main> 
-    <!-- ==== SCRIPTS ==== --> 
-    <script src="./dist/ts/index.js"></script>  
+  <div id="wrapper">
+    <h1>Memory Match Game</h1>
+    <p id="attempts">Attempts: 0</p>
+  </div>
+  <div class="game-container">
+    <div id="gameBoard" class="board"></div>
+    <button id="resetButton">Reset Game</button>
+  </div>
+  <script src="dist/js/index.js" type="module"></script>
 </body>
 </html>
